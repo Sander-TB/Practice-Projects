@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  margin: 10px 420px;
+  border: 100px solid gray;
+  border-radius: 20px;
+}
+
+button {
+  font-family: discourse-middle-fill, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 5px solid wheat;
+  outline: none;
+}
+
+.container>button:hover {}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: lores-12, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.output .previous-operand {
+  font-size: 35px;
+}
+
+.output .current-operand {
+  font-size: 50px;
+}
