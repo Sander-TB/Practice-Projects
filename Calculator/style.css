@@ -2,10 +2,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Roboto Mono', monospace;
-}
-
 body {
   background-color: lightblue;
   font-family: 'Roboto Mono', monospace;
