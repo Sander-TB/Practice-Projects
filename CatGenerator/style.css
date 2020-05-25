@@ -1,0 +1,26 @@
+.card {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+}
+
+.card-header {
+    background-color: white;
+    border: none;
+}
+
+.card-cat {
+    text-align: center;
+}
+
+img {
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        max-width: 250px;
+    }
+}
