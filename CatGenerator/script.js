@@ -1,3 +1,5 @@
+const button = document.querySelector("#btn");
+
 function displayCats() {
 	const catUrl =
 		"https://api.thecatapi.com/v1/images/search?5efa6662-6d84-4ec8-a5ee-5363bfece722";
@@ -11,9 +13,9 @@ function displayCats() {
 		const catImg = cats[0].url;
 		const image = document.querySelector("#cat");
 		image.src = catImg;
+
+		button.innerText = "More cat!";
 	}
 }
-
-const button = document.querySelector("#btn");
 
 button.onclick = displayCats;
